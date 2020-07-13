@@ -1,7 +1,6 @@
 ## editors
 /.idea
-*.iml
-*.iws
+/.vscode
 
 # dependencies
 /node_modules
