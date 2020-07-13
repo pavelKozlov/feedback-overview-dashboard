@@ -1,0 +1,19 @@
+{
+  "name": "feedback-overview-dashboard",
+  "version": "1.0.0",
+  "description": "Usabilla Frontend Developer Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavelKozlov/feedback-overview-dashboard.git"
+  },
+  "author": "Pavel Kozlov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pavelKozlov/feedback-overview-dashboard/issues"
+  },
+  "homepage": "https://github.com/pavelKozlov/feedback-overview-dashboard#readme"
+}
