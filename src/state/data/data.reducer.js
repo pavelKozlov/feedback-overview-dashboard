@@ -14,9 +14,9 @@ const reducer = (state = initialState, action) => {
     case FETCH_DATA_SUCCEEDED:
       newState = action.payload;
       break;
-    default:;
+    default:
   }
   return newState;
-}
+};
 
-export {reducer}
+export { reducer };

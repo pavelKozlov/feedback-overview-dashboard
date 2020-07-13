@@ -6,6 +6,4 @@ const rootReducer = combineReducers({
   data,
 });
 
-export {
-  rootReducer,
-}
+export { rootReducer };
