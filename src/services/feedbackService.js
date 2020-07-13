@@ -11,9 +11,6 @@ const instance = axios.create({
  * @returns {Promise<T>}
  */
 const fetchItems = () =>
-  instance.get('example/apidemo.json')
-    .then((response) => response.data);
+  instance.get('example/apidemo.json').then((response) => response.data);
 
-export {
-  fetchItems,
-}
+export { fetchItems };
