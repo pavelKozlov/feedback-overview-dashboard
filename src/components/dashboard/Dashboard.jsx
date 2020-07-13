@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import './dashboard.scss';
 
-import { fetchItems } from '../../services/feedbackService.js';
+import { fetchData } from '../../state/data/data.actions.js';
 
 const Dashboard = () => {
   useEffect(() => {
     // componentDidMount
-    fetchItems().then((data) => console.log({ data }));
+    fetchData();
   }, []);
   return <div>Hello world</div>;
 };
