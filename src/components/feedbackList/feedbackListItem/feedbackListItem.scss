@@ -17,6 +17,7 @@ $cell-padding: 10px;
   }
 
   &__column-comment {
+    text-align: left;
     flex-grow: 1;
     overflow: auto;
     max-height: calc(100% - 2 * #{$cell-padding});
@@ -29,7 +30,7 @@ $cell-padding: 10px;
     flex-direction: column;
   }
 
-  &_column-device-type {
+  &__column-device-type {
     min-width: 100px;
     max-width: 100px;
   }
