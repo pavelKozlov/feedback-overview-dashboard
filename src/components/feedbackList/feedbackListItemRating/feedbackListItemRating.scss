@@ -1,0 +1,15 @@
+$item-size: 40px;
+
+.rating-list-item {
+  width: $item-size;
+  height: $item-size;
+  border-radius: $item-size;
+  background-color: #069fc1;
+  color: #ffffff;
+  font-size: 16pt;
+
+  > span {
+    vertical-align: middle;
+    line-height: $item-size;
+  }
+}

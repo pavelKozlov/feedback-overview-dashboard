@@ -1,0 +1,41 @@
+$cell-padding: 10px;
+
+.feedback-list-row {
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  border-bottom: 1px solid #dedede;
+  align-items: center;
+
+  &__column {
+    text-align: center;
+    padding: $cell-padding;
+  }
+
+  &__column-rating {
+    width: 50px;
+  }
+
+  &__column-comment {
+    flex-grow: 1;
+    overflow: auto;
+    max-height: calc(100% - 2 * #{$cell-padding});
+  }
+
+  &__column-browser {
+    min-width: 80px;
+    max-width: 80px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_column-device-type {
+    min-width: 100px;
+    max-width: 100px;
+  }
+
+  &__column-platform {
+    min-width: 100px;
+    max-width: 100px;
+  }
+}

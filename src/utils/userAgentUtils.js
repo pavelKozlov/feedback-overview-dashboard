@@ -6,16 +6,16 @@
  */
 const getDeviceType = (userAgent) => {
   if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(userAgent)) {
-    return 'tablet';
+    return 'Tablet';
   }
   if (
     /Mobile|iP(hone|od|ad)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
       userAgent
     )
   ) {
-    return 'mobile';
+    return 'Mobile';
   }
-  return 'desktop';
+  return 'Desktop';
 };
 
 export { getDeviceType };
