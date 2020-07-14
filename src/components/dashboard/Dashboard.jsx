@@ -16,7 +16,6 @@ const Dashboard = () => {
   }, []);
   return (
     <div className="dashboard">
-      <h1>Hello world</h1>
       <FeedbackList items={feedbackItems} />
     </div>
   );
