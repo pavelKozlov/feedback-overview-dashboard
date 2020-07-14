@@ -1,6 +1,8 @@
 import { FETCH_DATA_SUCCEEDED } from './data.actionConsts.js';
 
-const initialState = [];
+const initialState = {
+  items: [],
+};
 
 /**
  * Data reducer.

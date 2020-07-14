@@ -1,18 +1,25 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { FeedbackList } from '../feedbackList/index.js';
 import './dashboard.scss';
 
 import { fetchData } from '../../state/data/data.actions.js';
 
 const Dashboard = () => {
   const dispatch = useDispatch();
+  const feedbackItems = useSelector((state) => state.data.items);
 
   useEffect(() => {
     // componentDidMount
     dispatch(fetchData());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-  return <div>Hello world</div>;
+  return (
+    <div>
+      <h1>Hello world</h1>
+      <FeedbackList items={feedbackItems} />
+    </div>
+  );
 };
 
 export { Dashboard };
