@@ -15,7 +15,7 @@ const Dashboard = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
-    <div>
+    <div className="dashboard">
       <h1>Hello world</h1>
       <FeedbackList items={feedbackItems} />
     </div>

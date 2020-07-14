@@ -4,9 +4,9 @@ import './feedbackList.scss';
 import { FeedbackListHeader } from './feedbackListHeader/FeedbackListHeader.jsx';
 
 const FeedbackList = ({ items }) => (
-  <div>
+  <div className="feedback-list">
     <FeedbackListHeader />
-    <ul className="feedback-list">
+    <ul className="feedback-list__list">
       {items.map((item) => (
         <FeedbackListItem
           {...{
