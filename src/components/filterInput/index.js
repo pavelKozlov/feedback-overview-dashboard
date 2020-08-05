@@ -1,1 +1,5 @@
-export { FilterInput } from './FilterInput.jsx';
+import { FilterInputContainer } from './FilterInput.container.jsx';
+
+export {
+  FilterInputContainer as FilterInput
+}
