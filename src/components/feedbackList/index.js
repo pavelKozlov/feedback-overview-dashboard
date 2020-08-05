@@ -1,1 +1,5 @@
-export { FeedbackList } from './FeedbackList.jsx';
+import { FeedbackListContainer } from './FeedbackList.container.jsx';
+export {
+  FeedbackListContainer as FeedbackList,
+}
+
