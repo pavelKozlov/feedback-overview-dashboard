@@ -5,7 +5,7 @@ import { getStore } from '../../../utils/testingUtils.js';
 
 import {FilterInputContainer} from '../FilterInput.container.jsx';
 
-describe('<FilterInput /> container component ', () => {
+describe('<FilterInput /> container component', () => {
   const getWrapper = (filterStr = '') => {
     const mockStore = getStore({
       data: {
