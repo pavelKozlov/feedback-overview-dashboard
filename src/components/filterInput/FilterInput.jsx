@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './filterInput.styles.scss';
 
 /**
@@ -27,5 +28,12 @@ const FilterInput = ({
     </button>
   </div>
 );
+
+FilterInput.propTypes = {
+  placeholder: PropTypes.string,
+  filterStr: PropTypes.string,
+  onFilterItems: PropTypes.func,
+  onClearClicked: PropTypes.func
+};
 
 export { FilterInput };

@@ -1,4 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 import { applyFilter, clearFilter } from '../../state/data/data.actions.js';
 import { FilterInput } from './FilterInput.jsx';
 
@@ -26,4 +27,7 @@ const FilterInputContainer = (props) => {
   });
 };
 
+FilterInputContainer.propTypes = {
+  placeholder: PropTypes.string,
+};
 export { FilterInputContainer };

@@ -35,6 +35,7 @@
     "lint-staged": "^10.2.11",
     "node-sass": "^4.14.1",
     "prettier": "^2.0.5",
+    "prop-types": "^15.7.2",
     "sinon": "^9.0.2"
   },
   "eslintConfig": {
