@@ -13,7 +13,7 @@ describe('<FilterInput/>', () => {
     onClearClicked = stub();
   });
 
-  const mountComponent = (props = {}) => shallow(
+  const getWrapper = (props = {}) => shallow(
     <FilterInput {...{
       placeholder: 'Test placeholder',
       filterStr: 'test filter string',
@@ -25,12 +25,12 @@ describe('<FilterInput/>', () => {
   );
 
   it('should render <FilterInput/> component', () => {
-    const wrapper = mountComponent();
+    const wrapper = getWrapper();
     expect(wrapper.hasClass('filter-input')).toBe(true);
   });
 
   it('should render input element inside <FilterInput/> component', () => {
-    const wrapper = mountComponent();
+    const wrapper = getWrapper();
     expect(wrapper.find('input').length).toBe(1);
     const input = wrapper.find('input');
     expect(input.hasClass('filter-input__input')).toBe(true);
@@ -39,7 +39,7 @@ describe('<FilterInput/>', () => {
   });
 
   it('should render clear button element inside <FilterInput/> component', () => {
-    const wrapper = mountComponent();
+    const wrapper = getWrapper();
     expect(wrapper.find('button').length).toBe(1);
     const button = wrapper.find('button').first();
     expect(button.hasClass('filter-input__clear-button')).toBe(true);
@@ -47,7 +47,7 @@ describe('<FilterInput/>', () => {
   });
 
   it('should call onFilterItems method on input element value changes', () => {
-    const input = mountComponent().find('input');
+    const input = getWrapper().find('input');
     input.simulate('change', {target: {value: 'abc'}});
 
     expect(onFilterItems.calledOnce).toBe(true);
@@ -55,7 +55,7 @@ describe('<FilterInput/>', () => {
   });
 
   it('should call onClearClicked method on clear button click', () => {
-    const button = mountComponent().find('button');
+    const button = getWrapper().find('button');
     button.simulate('click');
 
     expect(onClearClicked.calledOnce).toBe(true);
