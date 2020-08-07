@@ -13,4 +13,4 @@ const instance = axios.create({
 const fetchItems = () =>
   instance.get('example/apidemo.json').then((response) => response.data);
 
-export { fetchItems };
+export const feedbackService = { fetchItems };

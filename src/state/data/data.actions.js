@@ -1,4 +1,4 @@
-import { fetchItems } from '../../services/feedbackService.js';
+import {feedbackService} from '../../services/feedbackService.js';
 import {
   FETCH_DATA_FAILED,
   FETCH_DATA_SUCCEEDED,
@@ -12,7 +12,7 @@ import {
  */
 const fetchData = () => async (dispatch) => {
   try {
-    const data = await fetchItems();
+    const data = await feedbackService.fetchItems();
     await dispatch({ type: FETCH_DATA_SUCCEEDED, payload: data.items });
   } catch (e) {
     dispatch({ type: FETCH_DATA_FAILED });
