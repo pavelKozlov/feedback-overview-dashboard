@@ -1,6 +1,14 @@
 import React from 'react';
 import './filterInput.styles.scss';
 
+/**
+ * Component that implements filter functionality.
+ *
+ * @param {String} placeholder - The input placeholder.
+ * @param {String} filterStr - The string that exposes current filter value.
+ * @param {Function} onFilterItems - The input change callback.
+ * @param {Function} onClearClicked - The callback for clear button click event.
+ */
 const FilterInput = ({
   placeholder,
   filterStr,
