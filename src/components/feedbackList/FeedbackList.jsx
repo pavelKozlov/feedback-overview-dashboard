@@ -3,7 +3,7 @@ import { FeedbackListItem } from './feedbackListItem';
 import './feedbackList.scss';
 import { FeedbackListHeader } from './feedbackListHeader/FeedbackListHeader.jsx';
 
-const FeedbackList = ({items}) => (
+const FeedbackList = ({ items }) => (
   <div className="feedback-list">
     <FeedbackListHeader />
     <div className="feedback-list__list-container">

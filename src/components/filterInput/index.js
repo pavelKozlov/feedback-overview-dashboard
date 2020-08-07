@@ -1,5 +1,3 @@
 import { FilterInputContainer } from './FilterInput.container.jsx';
 
-export {
-  FilterInputContainer as FilterInput
-}
+export { FilterInputContainer as FilterInput };

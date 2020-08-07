@@ -13,9 +13,9 @@ import {
 const fetchData = () => async (dispatch) => {
   try {
     const data = await fetchItems();
-    await dispatch({type: FETCH_DATA_SUCCEEDED, payload: data.items});
+    await dispatch({ type: FETCH_DATA_SUCCEEDED, payload: data.items });
   } catch (e) {
-    dispatch({type: FETCH_DATA_FAILED});
+    dispatch({ type: FETCH_DATA_FAILED });
   }
 };
 
@@ -25,7 +25,7 @@ const fetchData = () => async (dispatch) => {
  * @returns {function(*): *}
  */
 const applyFilter = (filterStr) => (dispatch) =>
-  dispatch({type: APPLY_FILTER, payload: filterStr});
+  dispatch({ type: APPLY_FILTER, payload: filterStr });
 
 /**
  * Clears items filter.
@@ -33,10 +33,6 @@ const applyFilter = (filterStr) => (dispatch) =>
  * @returns {function(*): *}
  */
 const clearFilter = () => (dispatch) =>
-  dispatch({type: APPLY_FILTER, payload: ''});
+  dispatch({ type: APPLY_FILTER, payload: '' });
 
-export {
-  fetchData,
-  applyFilter,
-  clearFilter,
-};
+export { fetchData, applyFilter, clearFilter };

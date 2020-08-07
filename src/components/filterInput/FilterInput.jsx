@@ -1,4 +1,5 @@
 import React from 'react';
+import './filterInput.styles.scss';
 
 const FilterInput = ({
   placeholder,
@@ -6,13 +7,16 @@ const FilterInput = ({
   onFilterItems,
   onClearClicked,
 }) => (
-  <div>
+  <div className="filter-input">
     <input
       placeholder={placeholder}
       onChange={onFilterItems}
       value={filterStr}
+      className="filter-input__input"
     />
-    <button onClick={onClearClicked}>Clear</button>
+    <button onClick={onClearClicked} className="filter-input__clear-button">
+      Clear
+    </button>
   </div>
 );
 

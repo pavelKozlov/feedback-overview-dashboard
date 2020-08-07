@@ -6,10 +6,12 @@ const initialState = {
   filterStr: '',
 };
 
-const getFilteredItems = (allItems, filterStr) => allItems.filter((item) =>
-  // eslint-disable-next-line eqeqeq
-  item.rating == filterStr || item.comment.includes(filterStr)
-);
+const getFilteredItems = (allItems, filterStr) =>
+  allItems.filter(
+    (item) =>
+      // eslint-disable-next-line eqeqeq
+      item.rating == filterStr || item.comment.includes(filterStr)
+  );
 
 /**
  * Data reducer.
@@ -24,17 +26,17 @@ const reducer = (state = initialState, action) => {
       newState = {
         ...state,
         allItems: action.payload,
-        items: getFilteredItems(action.payload, state.filterStr)
+        items: getFilteredItems(action.payload, state.filterStr),
       };
       break;
     case APPLY_FILTER:
       newState = {
         ...state,
         filterStr: action.payload,
-        items: getFilteredItems(state.allItems, action.payload)
+        items: getFilteredItems(state.allItems, action.payload),
       };
       break;
-    default:;
+    default:
   }
   return newState;
 };

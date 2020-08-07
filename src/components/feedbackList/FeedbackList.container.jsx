@@ -4,7 +4,7 @@ import { FeedbackList } from './FeedbackList.jsx';
 const FeedbackListContainer = () => {
   const items = useSelector((state) => state.data.items);
 
-  return FeedbackList({items});
+  return FeedbackList({ items });
 };
 
-export {FeedbackListContainer};
+export { FeedbackListContainer };

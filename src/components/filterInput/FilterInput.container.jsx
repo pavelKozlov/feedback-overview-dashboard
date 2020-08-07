@@ -16,7 +16,7 @@ const FilterInputContainer = (props) => {
     ...props,
     filterStr,
     onFilterItems,
-    onClearClicked
+    onClearClicked,
   });
 };
 
