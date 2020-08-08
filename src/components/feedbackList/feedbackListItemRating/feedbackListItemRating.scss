@@ -2,6 +2,7 @@ $item-size: 40px;
 $item-size-mobile: 20px;
 
 .rating-list-item {
+  display: inline-block;
   width: $item-size;
   height: $item-size;
   border-radius: $item-size;
